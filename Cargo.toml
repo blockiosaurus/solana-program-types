@@ -1,0 +1,12 @@
+[package]
+name = "solana-program-types"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["legacy"]
+legacy = ["dep:solana-program"]
+
+[dependencies]
+cfg-if = "1.0.0"
+solana-program = { version = "1.18", optional = true }
